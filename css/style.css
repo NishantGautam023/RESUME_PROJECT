@@ -2,6 +2,8 @@ body {
     margin: 0px;
     /*Body have some margins added to it so we make it 0px
     */
+    font-family: sans-serif;
+    font-size: 30px;
 }
 
 #body-header {
@@ -61,14 +63,19 @@ to the anchor tag thus.. */
     text-decoration: none;
     /* this removes the underline */
     /* if we want transition property where color is to be delayed  then */
+    /* transition: color 0.5s, border-bottom 4s; */
+    /* we want the transiton rule only for nav -menu  */
+}
+
+.nav-menu li a {
     transition: color 0.5s, border-bottom 4s;
 }
 
 /* when we hover over the nav there is change in color and slight transiton 
 this can be acheived using pseudo class hover */
 
-.horizontal-list li a:hover {
-    color: lightgray;
+.nav-menu li a:hover {
+    color: lightgreen;
     border-bottom: 1px solid white;
 }
 
@@ -90,4 +97,25 @@ this can be acheived using pseudo class hover */
     color: white;
     font-weight: 700;
     margin-bottom: 0.5rem;
+}
+
+.social-icons li a img {
+    /* within the social-icons we have a list then anchor and a image we want
+    to apply styling to .. */
+    padding: 10px;
+    /* Generates gap between icons */
+    font-size: 1rem;
+    /* color: red; */
+    /* since we are using image not font-awsomw icons so */
+    border-radius: 50%;
+}
+
+/* to make hover over the icon we use pseudo  */
+
+.social-icons li a img:hover {
+    box-shadow: 0px 0px 6px 4px blueviolet;
+    /* will take 5 ptions one is horizoantal offset(postive value of 
+    HO means we want more shadow towards right, i negative
+    shadow will cast towards left, 0 equal on left and right), vertical oofset(
+        postive for bottom and negative for top.), color,spread,blur */
 }

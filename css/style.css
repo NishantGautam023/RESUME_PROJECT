@@ -1,85 +1,44 @@
 body {
     margin: 0px;
-    /*Body have some margins added to it so we make it 0px
-    */
     font-family: sans-serif;
     font-size: 30px;
 }
 
 #body-header {
-    /* Header is occupying certain section of viewport so we will be giving 
-    according to view port.
-
-    The background-size CSS property sets the size of the element's background 
-    image. The image can be left to its natural size,
-     stretched, or constrained to fit the available space.
-
-    The background-position property in CSS allows you to move a background image 
-    (or gradient) around within its container.eg: top, left, center etc 
-
-    opacity: 1;  this will give blurry effect to the image
-
-    when we are scrolling the impresion that the background image has 
-    some type of parallex so, the propert is background-attachment: fixed;
-    */
     height: 65vh;
     background-image: url(../image/mountains.jpg);
     background-size: cover;
     background-position: center;
-    /* opacity: 0.8; */
     background-attachment: fixed;
     padding-top: 1.2rem;
-    /* nav bar will come down little  */
 }
 
 .horizontal-list {
-    /* we need to remove the . and the list should be on left  */
     list-style: none;
     padding-left: 0px;
     margin: 0px;
-    /* text-align: center; */
-    /* this will make the list center but make a rather rule itself */
 }
 
 .horizontal-list li {
-    /* All the list items which have the class horizontal-list will be affected
-    as this is a way of nesting css
-     This removes the block and makes it in row wise i.e inline  
-     since they will be very close to each other we should add margin to
-     top                   bottom  ---> left right in space :) */
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    /* The font-weight property sets how thick or thin 
-    characters in text should be displayed  */
     font-size: 0.9rem;
 }
-
-/* since color is the property of the anchor tag we have to make relevant changes
-to the anchor tag thus.. */
 
 .horizontal-list li a {
     color: white;
     text-decoration: none;
-    /* this removes the underline */
-    /* if we want transition property where color is to be delayed  then */
-    /* transition: color 0.5s, border-bottom 4s; */
-    /* we want the transiton rule only for nav -menu  */
 }
 
 .nav-menu li a {
     transition: color 0.5s, border-bottom 4s;
 }
 
-/* when we hover over the nav there is change in color and slight transiton 
-this can be acheived using pseudo class hover */
-
 .nav-menu li a:hover {
     color: lightgreen;
     border-bottom: 1px solid white;
 }
-
-/* to make any text center let's make a rule for it */
 
 .text-center {
     text-align: center;
@@ -87,12 +46,10 @@ this can be acheived using pseudo class hover */
 
 #name-social-container {
     margin-top: 20vh;
-    /* keeps the name in center */
 }
 
 #my-name {
-    /* properties of nishant gautam name */
-    font-size: 3rem;
+    / font-size: 3rem;
     letter-spacing: 0.1rem;
     color: white;
     font-weight: 700;
@@ -100,22 +57,11 @@ this can be acheived using pseudo class hover */
 }
 
 .social-icons li a img {
-    /* within the social-icons we have a list then anchor and a image we want
-    to apply styling to .. */
     padding: 10px;
-    /* Generates gap between icons */
     font-size: 1rem;
-    /* color: red; */
-    /* since we are using image not font-awsomw icons so */
     border-radius: 50%;
 }
 
-/* to make hover over the icon we use pseudo  */
-
 .social-icons li a img:hover {
     box-shadow: 0px 0px 6px 4px blueviolet;
-    /* will take 5 ptions one is horizoantal offset(postive value of 
-    HO means we want more shadow towards right, i negative
-    shadow will cast towards left, 0 equal on left and right), vertical oofset(
-        postive for bottom and negative for top.), color,spread,blur */
 }

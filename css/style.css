@@ -118,7 +118,7 @@ section {
 the color is writing id and deciding the background-color another way is to write css in a pseduo clas way. */
 
 section:nth-child(2n) {
-    background-color: grey;
+    background-color: #9e9b9b29;
     /* 2n is even section of the child 2, ,4 ,6,8 */
 }
 
@@ -211,9 +211,31 @@ color and its positioning */
     background-color: #2857a4;
 }
 
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
 /* percentage classes */
 
 .eighty-five-percent {
     width: 85%;
     height: inherit;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
 }

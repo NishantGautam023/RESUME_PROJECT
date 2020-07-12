@@ -111,7 +111,7 @@ section {
     /* this is 100% width of the parent.  */
     display: flex;
     flex-direction: column;
-    height: 75vh;
+    /* height: 75vh; */
     /* this enables to see the nth child gray white by setting the height. */
 }
 
@@ -127,3 +127,23 @@ section:nth-child(2n+1) {
     background-color: white;
     /* 2n+1 is odd section of the child 1,3,5,7 */
 }
+
+/* skills of the icons and   */
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0, 5rem;
+}
+
+/* the sectio-heading and .section-heading span are basic setup for the icon,
+color and its positioning */

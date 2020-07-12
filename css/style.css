@@ -72,29 +72,19 @@ body {
     height: auto;
     width: 100%;
     position: relative;
-    /* the image might come under the background, we want the image in
-    the about seciton to come over the background imaage., so 
-    make posiiton relative, which will place relative to it's original 
-    position. which will apperar over elements. */
 }
 
 #my-image {
     height: 12rem;
     width: 12rem;
     margin: auto;
-    /* this will bring image to center */
     margin-top: -17vh;
-    /* this will give negative maergin to the image, which results the
-    image to be little bit up. */
 }
-
-/* to set height and height accoriding to the parent div we need too  */
 
 #my-image img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    /* border-radius results our image to be circular */
     border: 3px solid white;
     box-shadow: 1px 1px 10px 2px lightgray;
 }
@@ -107,11 +97,9 @@ body {
     line-height: 28px;
     font-size: 1.1rem;
     margin: auto;
-    /* everything about paragraph section */
 }
 
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
-    /* everything about text highlight  */
 }

@@ -23,7 +23,7 @@ body {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 
 .horizontal-list li a {
@@ -49,7 +49,7 @@ body {
 }
 
 #my-name {
-    / font-size: 3rem;
+    font-size: 3rem;
     letter-spacing: 0.1rem;
     color: white;
     font-weight: 700;
@@ -64,4 +64,54 @@ body {
 
 .social-icons li a img:hover {
     box-shadow: 0px 0px 6px 4px blueviolet;
+}
+
+/* about section */
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    /* the image might come under the background, we want the image in
+    the about seciton to come over the background imaage., so 
+    make posiiton relative, which will place relative to it's original 
+    position. which will apperar over elements. */
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    /* this will bring image to center */
+    margin-top: -17vh;
+    /* this will give negative maergin to the image, which results the
+    image to be little bit up. */
+}
+
+/* to set height and height accoriding to the parent div we need too  */
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* border-radius results our image to be circular */
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgray;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+    /* everything about paragraph section */
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+    /* everything about text highlight  */
 }

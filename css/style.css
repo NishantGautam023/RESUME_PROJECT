@@ -99,41 +99,24 @@ body {
     margin: auto;
 }
 
-/* all the section that we will be creating will have the direction has flex */
-
 section {
     width: 100%;
-    /* this is 100% width of the parent.  */
     display: flex;
     flex-direction: column;
-    /* height: 75vh; */
-    /* this enables to see the nth child gray white by setting the height. */
     align-items: center;
-    /* align items works across the cross-axis, the main axis is column axis so the
-    cross axis will be horizontal, 
-     this will make the skills, div  in center */
 }
-
-/* we might have noticed every alternative section has same color, one way to decide 
-the color is writing id and deciding the background-color another way is to write css in a pseduo clas way. */
 
 section:nth-child(2n) {
     background-color: #9e9b9b29;
-    /* 2n is even section of the child 2, ,4 ,6,8 */
 }
 
 section:nth-child(2n+1) {
     background-color: white;
-    /* 2n+1 is odd section of the child 1,3,5,7 */
 }
-
-/* skills of the icons and   */
 
 .section-heading {
     width: auto;
     padding: 20px 10px 10px;
-    /* margin: 10px auto; */
-    /* no need of margin becuse skills will be automatically centralized. */
     font-weight: 400;
 }
 
@@ -145,36 +128,23 @@ section:nth-child(2n+1) {
     margin-right: 0, 5rem;
 }
 
-/* the sectio-heading and .section-heading span are basic setup for the icon,
-color and its positioning */
-
 .skills-display {
     width: 75%;
-    /* height: 100px;
-    border: 2px solid black; */
-    /* The height and border is something that we don't need now. */
     display: flex;
-    /* the .skills-display will have multiple skills,so for that the display should
-    be flex */
     flex-wrap: wrap;
-    /* number of skills in one line is adjusting accroring to dimension, thus flex:
-    wrap should be wrap. */
     justify-content: space-evenly;
-    /* spaces between skills should be even and adjust accordingly. */
-    padding: 10px;
+    / padding: 10px;
     margin-bottom: 30px;
 }
 
 .skill-progress {
     height: 2.2rem;
     width: 11rem;
-    /* indicates the length and width of the box i.e c++ */
     background-color: lightgray;
     border-radius: 1rem;
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
     margin: 25px;
     overflow: hidden;
-    /* border: 2px solid black; */
 }
 
 .skill-name span {
@@ -185,9 +155,6 @@ color and its positioning */
 }
 
 .skill-progress>div {
-    /* if we have written .skill-progess div , this css rule would have applied to all
-    div within skill progess but writinh > will apply only to direct child of skill
-    progress i.e 85% and mb-blue  and other div within child div will not be applied */
     border-radius: 20px 0px 0px 20px;
     box-shadow: 1px 1px 5px 2px #989882;
 }
